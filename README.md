@@ -1,6 +1,17 @@
-# Bluefruit LE Connect v2
+# ****MODIFIED Bluefruit LE Connect v2
 
 iOS app for use with Bluefruit Bluetooth LE modules and dev boards from Adafruit.
+Heavily modified for UofM Ble NS project
+Sends most recent BG, Direction and Date from Your NS Endpoint
+Majority of mods are in uart storyboard (see storyboard entitled UARTuofmscene and uartbaseviewcontroller.swift)
+Because the ble functions in the app were embedded into the UI, I simply modified the UART functionality accordingly.
+
+Added save URL
+Added update interval in minute
+Added backround keep awake when the app is looping
+
+You'll need to change the signing authority to load the app via xcode onto your phone
+
 
 **Important:** Open this project in Xcode by using the .xcworkspace file and not the .xcodeproj file
 
